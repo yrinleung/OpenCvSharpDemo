@@ -25,6 +25,9 @@ namespace OpenCvSharpDemo
         [InlineData("image2-1.jpg", "image2-2.jpg")]
         [InlineData("image2-1.jpg", "image1-1.jpg")]
         [InlineData("image2-2.jpg", "image1-2.jpg")]
+        [InlineData("image3-1.png", "image3-2.png")]
+        [InlineData("image4-1.png", "image4-2.png")]
+        [InlineData("image5-1.png", "image5-2.png")]
         public void RadialVarianceHashTest(string imageFile1, string imageFile2)
         {
             using (var model = RadialVarianceHash.Create())
@@ -54,6 +57,9 @@ namespace OpenCvSharpDemo
         [InlineData("image2-1.jpg", "image2-2.jpg")]
         [InlineData("image2-1.jpg", "image1-1.jpg")]
         [InlineData("image2-2.jpg", "image1-2.jpg")]
+        [InlineData("image3-1.png", "image3-2.png")]
+        [InlineData("image4-1.png", "image4-2.png")]
+        [InlineData("image5-1.png", "image5-2.png")]
         public void PHashTest(string imageFile1, string imageFile2)
         {
             using (var model = PHash.Create())
@@ -83,6 +89,7 @@ namespace OpenCvSharpDemo
         [InlineData("image2-1.jpg", "image2-2.jpg")]
         [InlineData("image2-1.jpg", "image1-1.jpg")]
         [InlineData("image2-2.jpg", "image1-2.jpg")]
+        [InlineData("image3-1.png", "image3-2.png")]
         public void MarrHildrethHashTest(string imageFile1, string imageFile2)
         {
             using (var model = MarrHildrethHash.Create())
@@ -112,6 +119,7 @@ namespace OpenCvSharpDemo
         [InlineData("image2-1.jpg", "image2-2.jpg")]
         [InlineData("image2-1.jpg", "image1-1.jpg")]
         [InlineData("image2-2.jpg", "image1-2.jpg")]
+        [InlineData("image3-1.png", "image3-2.png")]
         public void ColorMomentHashTest(string imageFile1, string imageFile2)
         {
             using (var model = ColorMomentHash.Create())
@@ -141,6 +149,7 @@ namespace OpenCvSharpDemo
         [InlineData("image2-1.jpg", "image2-2.jpg")]
         [InlineData("image2-1.jpg", "image1-1.jpg")]
         [InlineData("image2-2.jpg", "image1-2.jpg")]
+        [InlineData("image3-1.png", "image3-2.png")]
         public void BlockMeanHashTest(string imageFile1, string imageFile2)
         {
             using (var model = BlockMeanHash.Create())
@@ -170,6 +179,7 @@ namespace OpenCvSharpDemo
         [InlineData("image2-1.jpg", "image2-2.jpg")]
         [InlineData("image2-1.jpg", "image1-1.jpg")]
         [InlineData("image2-2.jpg", "image1-2.jpg")]
+        [InlineData("image3-1.png", "image3-2.png")]
         public void AverageHashTest(string imageFile1, string imageFile2)
         {
             using (var model = AverageHash.Create())
